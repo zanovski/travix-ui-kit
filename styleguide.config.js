@@ -4,15 +4,12 @@ module.exports = {
   template: './styleguide.html',
   components: 'components/**/*.js',
   skipComponentsWithoutExample: true,
-  getExampleFilename: function(componentPath) {
-    return componentPath.replace(/\.jsx?$/, '.md');
-  },
   webpackConfig: {
     module: {
       rules: [
         {
           test: /\.js?$/,
-          include: __dirname + '/components',
+          exclude: /node_modules\/(?!buble)/,
           use: 'babel-loader',
         },
       ],

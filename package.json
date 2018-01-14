@@ -90,7 +90,7 @@
     "sass-loader": "~6.0.4",
     "style-loader": "~0.18.2",
     "theme-builder": "~0.5.0",
-    "webpack": "~2.5.1",
+    "webpack": "^3.10.0",
     "webpack-hot-middleware": "^2.15.0"
   },
   "greenkeeper": {
